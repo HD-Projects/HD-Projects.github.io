@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ad101-lab.github.io
+Token: b0b7815c11893e73d0356013532b7b8f75c9e0f58f34311d66630a2000947630
