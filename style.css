@@ -25,6 +25,9 @@ div{
   margin: auto;
   padding: 0%;
   background-color: #333;
+  border: 10px;
+}
+div p{
   color: #f2f2f2;
 }
 
