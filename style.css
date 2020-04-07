@@ -54,7 +54,7 @@ button {
   font-family: 'Baloo Thambi 2', cursive;
   width: 100%;
   border: 5% 5%;
-  box-shadow: 3px 3px;
+  box-shadow: 0px 5px;
 }
 
 /* Links inside the navbar */
