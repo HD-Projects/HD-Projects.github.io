@@ -21,12 +21,12 @@ div img {
 }
 
 div{
+  padding: 0 20px;
+  margin: 6em 3% 19em 3%;
   width: 55%;
-  margin: auto;
   background-color: rgb(100, 100, 100);
   border: 10px;
   border-color: rgb(100, 100, 100);
-  padding: 10% 0%;
 }
 div p{
   color: #f2f2f2;
