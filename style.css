@@ -20,16 +20,16 @@ div img {
   border-radius: 0%;
 }
 
-div {
+div{
   width: 55%;
   margin: auto;
   padding: 0%;
+  background-color: #000000;
 }
 
 a {
  color:  rgb(29, 25, 250);
 }
-
 
 button {
   font-size: 17px;
