@@ -24,7 +24,7 @@ div{
   width: 55%;
   margin: auto;
   padding: 0%;
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(100, 100, 100);
   border: 10px;
 }
 div p{
@@ -146,7 +146,7 @@ th, td {
 }
 
 table, th, td {
-  border: 5px solid rgb(71, 71, 71);
+  border: 5px solid rgb(99, 99, 99);
   border-collapse: collapse;
   text-align: center;
 }
