@@ -28,3 +28,8 @@
   cursor: default;
   background-color: #ffffff;
 }
+
+.bullet{
+  text-align: left;
+  padding: 10%;
+}
