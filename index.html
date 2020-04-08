@@ -11,36 +11,54 @@
   <html>
     <head>
       <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600&display=swap" rel="stylesheet">
-      <link href="https://HD-Projects.github.io/style.css" rel="stylesheet">
+      <link href="https://HD-Projectsgithubio.ad101lab.repl.co/style.css" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>HD Open Source Projects</title>
       <link rel="shortcut icon" href="https://HD-Projects.github.io/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
-      <div class="navbar">
-        <a href="https://HD-Projects.github.io">Home</a>
-        <a href="https://HD-Projects.github.io/donate/">Donate</a>
-        <a href="https://HD-Projects.github.io/hire/">Hire Us</a>
-        <a href="https://HD-Projects.github.io/vexcode/">VEX Robotics</a>
-        <a href="https://HD-Projects.github.io/email-python/">Python Backend</a>
-        <a href="https://HD-Projects.github.io/raid/">Raid The Romans</a>
-        <a href="https://HD-Projects.github.io/flappy/">Flappy Bird</a>
-        <a href="https://HD-Projects.github.io/projects/">Project Ideas</a>
-        <a href="https://HD-Projects.github.io/dead/">Revive an Old Project</a>
-        <a href="https://HD-Projects.github.io/progress/">See What We Are Up To</a>
-        <a href="https://HD-Projects.github.io/about/">About Us</a>
+      <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io">Home</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/donate/">Donate</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/hire/">Hire Us</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/vexcode/">VEX Robotics</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/email-python/">Python Backend</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/raid/">Raid The Romans</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/flappy/">Flappy Bird</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/projects/">Project Ideas</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/dead/">Revive an Old Project</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/progress/">See What We Are Up To</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/about/">About Us</a>
       </div>
-      <div>
+      <div class="w3-main" style="margin-left:200px">
+      <div class="w3-grey">
+        <button class="w3-button w3-grey w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+          <h1>HD Projects</h1>
+        </div>
+      </div>
+      <div class="w3-container w3-center">
+        <div class="main">
         <img src="https://HD-Projects.github.io/images/code-coding-connection-css.jpg">
+        </div>
         <p>We are two students that are passionate about coding and have been working on many open source projects to pass the time during the COVID-19.</p>
 
         <p>We have been working hard and to keep open source projects alive but we need donations pay for server power, domain hosting, hardware, and sotware to create the open source projects</p>
         
         <p><a href="https://brave.com/adl649">Brave</a> is a browser that doesn't sell your private data to third parties and that gives you 70% of the ad revenue made from the ads you watch. As a comparison, google sells your personal data to third parties(random companies) and lets you keep a total of 0% of your ad revenue. Make the switch to Brave, protect your online privacy and earn a little bit of money along the way </p>
       </div>
-</head>
+      <script>
+      function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+      }
+      function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+      }
+      </script>
 
-<div class="slideshow-container">
+<!--<div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
@@ -105,7 +123,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-</script>
+</script>-->
       <div class="footer">
         <a href="https://HD-Projects.github.io/github"><b>GitHubs</b></a>
         <a href="https://HD-Projects.github.io/legal"><b>Legal</b></a>
