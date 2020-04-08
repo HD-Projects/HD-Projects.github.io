@@ -21,10 +21,9 @@
 
 .footer a:hover {
   float: left;
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(43, 43, 43);
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   cursor: default;
   background-color: #ffffff;
