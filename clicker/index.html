@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var clicks = 0;
+function myFunction() {
+
+clicks += 1;
+document.getElementById("demo").innerHTML = clicks;
+}
+function addDude() {
+if (clicks > 14) {
+clicks = clicks-15
+miners += 1
+document.getElementById("miners").innerHTML = miners;
+}
+else {}
+}
+for (miners)
+window.setTimeout(addClick(), 5000 / miners);
+}
+function addClick(){
+clicks += 1;
+}
+
+
+
+</script>
+</head>
+<body>
+
+<p>Click the button to trigger a function.</p>
+
+<button onclick="myFunction()">Click me</button>
+<button onclick="addDude()"> Add An Autoclicker</button>
+
+
+<p id="demo"></p>
+<p id="miner"></p>
+
+</body>
+</html>
+You were in a call with Riley
+5:31 PM
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+   var myVar;
+   var clicks = 0;
+   var miners = 0;
+   function addClick() {
+
+       clicks += 1;
+       document.getElementById("demo").innerHTML = clicks;
+   }
+   
+   function addDude() {
+ 
+   if (clicks > 14) {
+   clicks += -15
+   miners += 1
+   myFunction()
+           
+         
+   }
+       document.getElementById("miner").innerHTML = miners;
+       document.getElementById("demo").innerHTML = clicks;
+   }
+   
+   
+ 
+   function myFunction() {
+ myVar = setInterval(addClick, 2000);
+}
+
+
+
+
+
+</script>
+</head>
+<body>
+
+
+
+<p>Click the button to trigger a function.</p>
+
+<img src="cookie.jpg" onclick="addClick()">
+<button onclick="addDude()"> Add An Autoclicker</button>
+
+
+<p id="demo"></p>
+<p id="miner"></p>
+
+</body>
+</html>

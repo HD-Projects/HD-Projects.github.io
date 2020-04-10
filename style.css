@@ -33,3 +33,13 @@
   text-align: left;
   padding: 10%;
 }
+
+.links a{
+  text-decoration: none;
+  cursor: default;
+}
+
+.links a:visited{
+  text-decoration: none;
+  cursor: default;
+}
