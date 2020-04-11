@@ -20,9 +20,11 @@ function toggle(){
   darkMode = !darkMode;
   if(darkMode){
     document.getElementById("body").className = "w3-dark-grey w3-container w3-center w3-border";
+    document.getElementById("mySidebar").className = "w3-dark-grey w3-container w3-center w3-border";
     localStorage.setItem("darkMode", 1);
   }else{
     document.getElementById("body").className = "w3-container w3-center w3-border";
+    document.getElementById("mySidebar").className = "w3-container w3-center w3-border";
     localStorage.setItem("darkMode", 0);
   }
 }
