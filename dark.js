@@ -1,19 +1,20 @@
+function getDarkMode(){
+  if(!localStorage.getItem("darkMode")) {
+    localStorage.setItem("darkMode", 0);
+  }
 
-if(!localStorage.getItem("darkMode")) {
-  localStorage.setItem("darkMode", 0);
-}
+  var darkModeInt = parseInt(localStorage.getItem("darkMode"));
+  var darkMode;
 
-var darkModeInt = parseInt(localStorage.getItem("darkMode"));
-var darkMode;
-
-if(darkModeInt == 1){
-  darkMode = true;
-  document.getElementById('body').style.backgroundColor = "#000000";
-  document.getElementById('body').style.color = "#ffffff";
-}else{
-  var darkMode = false;
-  document.getElementById('body').style.backgroundColor = "#ffffff";
-  document.getElementById('body').style.color = "#000000";
+  if(darkModeInt == 1){
+    darkMode = true;
+    document.getElementById('body').style.backgroundColor = "#000000";
+    document.getElementById('body').style.color = "#ffffff";
+  }else{
+    var darkMode = false;
+    document.getElementById('body').style.backgroundColor = "#ffffff";
+    document.getElementById('body').style.color = "#000000";
+  }
 }
 
 function toggle(){
