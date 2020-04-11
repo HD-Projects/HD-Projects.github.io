@@ -1,6 +1,37 @@
-/*function w3_open() {
-  document.getElementById("menuSidebar").style.background-color = "black";
+if(!localStorage.getItem("darkMode")) {
+  localStorage.setItem("darkMode", 0);
+  alert("local Var Created")
 }
-function w3_close() {
-    document.getElementById("menuSidebar").style.display = "none";
-}*/
+
+var darkModeInt = parseInt(localStorage.getItem("darkMode"));
+alert(darkModeInt)
+if(darkModeInt == 1){
+  var darkMode = true;
+  if(darkMode){
+    document.getElementById('body').style.backgroundColor = "#000000";
+    localStorage.setItem("darkMode", 1);
+  }else{
+    document.getElementById('body').style.backgroundColor = "#ffffff";
+    localStorage.setItem("darkMode", 0);
+  }
+}else{
+  var darkMode = false;
+  if(darkMode){
+    document.getElementById('body').style.backgroundColor = "#000000";
+    localStorage.setItem("darkMode", 1);
+  }else{
+    document.getElementById('body').style.backgroundColor = "#ffffff";
+    localStorage.setItem("darkMode", 0);
+  }
+}
+
+function toggle(){
+  darkMode = !darkMode;
+  if(darkMode){
+    document.getElementById('body').style.backgroundColor = "#000000";
+    localStorage.setItem("darkMode", 1);
+  }else{
+    document.getElementById('body').style.backgroundColor = "#ffffff";
+    localStorage.setItem("darkMode", 0);
+  }
+}
