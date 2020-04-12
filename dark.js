@@ -8,9 +8,9 @@ function getDarkMode(){
   var darkModeInt = parseInt(localStorage.getItem("darkMode"));
   
   if(darkModeInt == 1){
-    darkMode = false;
-  }else{
     darkMode = true;
+  }else{
+    darkMode = false;
   }
   if(darkMode){
     document.getElementById("body").className = "w3-black w3-container w3-center w3-border";
