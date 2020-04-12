@@ -8,8 +8,8 @@ function getDarkMode(){
 
   if(darkModeInt == 1){
     darkMode = true;
-    document.getElementById("body").className = "w3-dark-grey w3-container w3-center w3-border";
-    document.getElementById("mySidebar").className = "w3-dark-grey w3-container w3-center w3-border";
+    document.getElementById("body").className = "w3-black w3-container w3-center w3-border";
+    document.getElementById("mySidebar").className = "w3-black w3-container w3-center w3-border";
   }else{
     var darkMode = false;
     document.getElementById("body").className = "w3-container w3-center w3-border";
@@ -20,8 +20,8 @@ function getDarkMode(){
 function toggle(){
   darkMode = !darkMode;
   if(darkMode){
-    document.getElementById("body").className = "w3-dark-grey w3-container w3-center w3-border";
-    document.getElementById("mySidebar").className = "w3-dark-grey w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left";
+    document.getElementById("body").className = "w3-black w3-container w3-center w3-border";
+    document.getElementById("mySidebar").className = "w3-black w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left";
     localStorage.setItem("darkMode", 1);
   }else{
     document.getElementById("body").className = "w3-container w3-center w3-border";
