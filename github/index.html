@@ -16,8 +16,9 @@
       <title>GitHub | HD Open Source Projects</title>
       <link rel="shortcut icon" href="https://HD-Projects.github.io/favicon.ico" type="image/x-icon" />
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script src="https://hd-projects.github.io/dark.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="getDarkMode()">
       <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
         <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
         <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io">Home</a>
@@ -27,6 +28,7 @@
         <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/email-python/">Python Backend</a>
         <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/raid/">Raid The Romans</a>
         <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/flappy/">Flappy Bird</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/clicker/">Clicker Game</a>
         <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/projects/">Project Ideas</a>
         <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/dead/">Revive an Old Project</a>
         <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/progress/">See What We Are Up To</a>
@@ -34,13 +36,14 @@
       </div>
       <script src="https://HD-Projects.github.io/w3.js" type="text/javascript"></script>
       <div class="w3-main" style="margin-left:200px">
-      <div class="w3-dark-grey">
+      <div class="w3-dark-grey" id="top">
         <button class="w3-button w3-dark-grey w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+        <button class="w3-button w3-display-topright" onclick="toggle()"><img src="https://hd-projects.github.io/images/dark-mode.png" class="w3-display-topright" width="20" height="20"></button>
         <div class="w3-container">
-          <h1>GitHub | HD Projects</h1>
+          <h1>Github | HD Projects</h1>
         </div>
       </div>
-      <div class="w3-container w3-center">
+      <div class="w3-container w3-center" id="body">
         <div class="main">
         <img src="https://HD-Projects.github.io/images/code-coding-connection-css.jpg">
         </div>
