@@ -43,3 +43,7 @@
   text-decoration: none;
   cursor: default;
 }
+
+ul {
+  text-align: left;
+}
