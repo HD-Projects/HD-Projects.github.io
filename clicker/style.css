@@ -1,0 +1,254 @@
+body {
+margin: auto;
+text-align: center;
+
+}
+
+.labelF {
+
+color: black;
+
+}
+
+h1 {
+
+  text-align: center;
+}
+
+
+#dataArea {
+
+text-align: left;
+margin-left: 30px;
+}
+
+
+
+#chips, #miner, #machines, #airdropPlanes {
+font-size: 20px;
+color:brown;
+font-family: 'Luckiest Guy', cursive;
+
+}
+
+.dataLabel {
+font-size: 20px;
+}
+
+.icon {
+height: 20px;
+
+}
+
+
+#buyButtons {
+
+text-align: left;
+
+}
+
+.cpsData, #cookiesPerSecond {
+font-family: 'Luckiest Guy', cursive;
+font-size: 20px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: url('particles.gif');
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.1s;
+  animation: fadeIn 0.1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.buttonId {
+margin-top: 5px;
+height: 40px;
+}
+
+#theCookie {
+
+height: 300px;  
+}
+
+button {
+margin: 5px;
+width: 390px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  text-align: left;
+  font-size: 10px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#cheatCodes {
+
+ width: 1800; 
+}
