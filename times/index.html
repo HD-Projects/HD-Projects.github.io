@@ -17,6 +17,7 @@
       <link rel="shortcut icon" href="https://HD-Projects.github.io/favicon.ico" type="image/x-icon" />
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <script src="https://hd-projects.github.io/dark.js" type="text/javascript"></script>
+      <script src="times.js" type="text/javascript"></script>
     </head>
     <body onload="getDarkMode()">
       <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
@@ -44,7 +45,7 @@
         <button class="w3-button w3-dark-grey w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
         <button class="w3-button w3-display-topright" onclick="toggle()"><img src="https://hd-projects.github.io/images/dark-mode.png" class="w3-display-topright" width="20" height="20"></button>
         <div class="w3-container">
-          <h1>Home | HD Projects</h1>
+          <h1>Multiplication Facts | HD Projects</h1>
         </div>
       </div>
       <div class="w3-container w3-center w3-border" id="body">
@@ -52,8 +53,14 @@
         <img src="https://HD-Projects.github.io/images/code-coding-connection-css.jpg">
         </div>
       
-      <h2>Machine Learning</h2>
-      <p>We are learning Machine Learning, We have found that it is very hard. We are tring to make a Q-Learning which would give the program a benifit for completeing a task like going around a loop in a car and getting a benifit by going aroud a certain distance. A GitHub page is <a href="https://github.com/hd-projects/ML/">HERE</a>. For those of you who have no clue what machine learning is. From <cite><a href="https://en.wikipedia.org/wiki/Machine_learning" title="Link to the wiki page">Wikipedia</a></cite> "Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to carry out tasks without explicit instructions, such as by using pattern recognition and inference. It is seen as a subset of artificial intelligence. Machine learning algorithms build a mathematical model based on sample data, known as 'training data', in order to make predictions or decisions without being explicitly programmed to do so Machine learning algorithms are used in a wide variety of applications, such as email filtering and computer vision, where it is difficult or infeasible to develop conventional algorithms to perform the needed tasks,". The difference bettween Artifical Intelegence(AI) and Machine Learning is that AI is made to mimic a humans activity such as learning to drive a car around a course, but Machine Learning looks for the patterns in a dataset to help predict what another value in the dataset might be.</p>
+      <h2>Multiplication Fact Game</h2>
+      <p>This is a simple in the browser JavaScript game to help people with their multiplication facts.</p>
+      <button class="w3-grey w3-button" onclick="newFact10()">10 Facts</button>
+      <h3 id="ask"><br></h3>
+      <form id="frm1">
+        Answer: <input type="number" name="answer"><br><br>
+        <input type="submit" value="Submit" class="w3-button">
+      </form> 
       </div>
       <div class="footer">
         <a href="github.html"><b>GitHubs</b></a>
