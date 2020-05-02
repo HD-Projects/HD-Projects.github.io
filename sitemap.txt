@@ -15,3 +15,7 @@ https://hd-projects.github.io/progress/
 https://hd-projects.github.io/projects/
 https://hd-projects.github.io/raid/
 https://hd-projects.github.io/vexcode/
+https://hd-projects.github.io/server/
+https://hd-projects.github.io/times/
+https://hd-projects.github.io/minecraft/
+https://hd-projects.github.io/machinelearning/
