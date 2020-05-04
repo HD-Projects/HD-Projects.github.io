@@ -35,3 +35,5 @@ function toggle(){
     localStorage.setItem("darkMode", 0);
   }
 }
+
+window.onload = "getDarkMode"

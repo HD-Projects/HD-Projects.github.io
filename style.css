@@ -47,3 +47,11 @@
 ul {
   text-align: left;
 }
+
+.no-script {
+  font-size:  200%;
+}
+
+.full-width {
+  width: 90%;
+}
