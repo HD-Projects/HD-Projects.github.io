@@ -10,6 +10,202 @@
 
   gtag('config', 'UA-159158579-3');
 </script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+body {
+  font-family: Arial;
+  color: black;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color: black;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+button {
+text-align: center;
+font-size: 30px
+
+
+}
+
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 400px;
+  background: white;
+}
+
+
+</style>
+
       <meta http-equiv="content-language" content="en">
       <meta name="description" content="HD Projects: Hire Us. We will go 20% below any other web designer on the market">
       <meta name="keywords" content="HD Projects, Hire, Web design, website, ">
@@ -56,40 +252,105 @@
         </div>
       
       <h2>Hire Us</h2>
-      <p> You can hire us as full-stack web developers to work on your website for you. We can create full responsive websites(If on a computer press CTRL+SHIFT+I and on the top menu click the Tablet and Phone Icon to see a preview of what it would look like on a phone) for you as well as help with things such as implanting ad-sense code or making an online store. We charge you based on number of pages or hours depending on whatever is cheaper!</p>
+      <p> You can hire us as full-stack web developers to work on your website for you. We can create full responsive websites for you as well as help with things such as implanting ad-sense code or making an online store.
+        Below is an example of what our website looks like on mobile phones
+         .We charge you based on number of pages or hours depending on whatever is cheaper!</p>
       <h2>Pricing</h2>
   
       <h2>Price match gurantee</h2>
       <p>Any web developer that you find for hire we will charge 30% less than they do, always!</p>
-      <div class="w3-responsive">
-      <table class="w3-table-all">
-        <tbody>
-          <tr>
-            <td>hours </td>
-            <td>dollars </td>
-            <td>pages </td>
-            <td>dollars </td>
-          </tr>
-          <tr>
-            <td>1 </td>
-            <td>10 </td>
-            <td>1 </td>
-            <td>7 </td>
-          </tr>
-          <tr>
-            <td>2 </td>
-            <td>18 </td>
-            <td>2 </td>
-            <td>13 </td>
-          </tr>
-          <tr>
-            <td>3 </td>
-            <td>25 </td>
-            <td>3 </td>
-            <td>18 </td>
-          </tr>
-        </tbody>
-      </table>
+
+<h1> An Example Of Our Responsive Content </h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="smartphone">
+  <div class="content">
+    
+
+
+<iframe src="https://hd-projects.github.io/" style="height:520px;width:360px;"></iframe>
+
+  </div>
+</div>
+
+
+
+
+<br>
+<br> 
+<br> 
+<br> 
+<h1> Our Pricing Table </h1>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic Page</li>
+    <li class="grey">$ 9.99/ Each</li>
+    <li>Modern Features Like Parralax Scrolling</li>
+    <li>Up to 10 Images</li>
+    <li>As much text as you want</li>
+
+<button onClick="javascript:window.open('mailto:mail@domain.com', 'mail');event.preventDefault()" href="mailto:mail@domain.com">Hire Us</button>
+
+
+
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header"  class="buyNow" style="background-color:#4CAF50">Elite Page</li>
+    <li class="grey">$ 24.99 / Each</li>
+    <li>Unlimited Images</li>
+    <li>Free SEO</li>
+    <li>1 E-Commerce Store</li>
+    <li>All the features of a pro page</li>
+
+<button onClick="javascript:window.open('mailto:mail@domain.com', 'mail');event.preventDefault()" href="mailto:mail@domain.com">Hire Us</button>
+
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">  Pro Page
+    </li>
+    <li class="grey">$ 14.99/ Each </li>
+    <li>All the features of a basic page</li>
+    <li>30 Images</li>
+    <li>Free Search Engine Submission</li>
+    <li>Free domain Integration</li>
+
+<button onClick="javascript:window.open('mailto:mail@domain.com', 'mail');event.preventDefault()" href="mailto:mail@domain.com">Hire Us</button>
+
+
+  </ul>
+</div>
+
+
 
       </div>
       <div class="w3-container w3-dark-grey footer">

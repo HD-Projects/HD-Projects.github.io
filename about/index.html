@@ -1,18 +1,10 @@
 <DOCTYPE html>
   <html>
     <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159158579-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-159158579-3');
-</script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <meta http-equiv="content-language" content="en">
-      <meta name="description" content="About us at HD-Projects, We are two students who are passionate about proramming and would like to share our journey with you">
-      <meta name="keywords" content="hd projects, hd-projects, about, ">
+      <meta name="description" content="HD Projects: Revive a dead project">
+      <meta name="keywords" content="hd projects, revive, dead, ">
       <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600&display=swap" rel="stylesheet">
       <link href="https://HD-Projectsgithubio.ad101lab.repl.co/style.css" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,52 +12,384 @@
       <link rel="shortcut icon" href="https://HD-Projects.github.io/favicon.ico" type="image/x-icon" />
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <script src="https://hd-projects.github.io/dark.js" type="text/javascript"></script>
-    </head>
-    <body onload="getDarkMode()">
-      <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
-        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io">Home</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/donate/">Donate</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/hire/">Hire Us</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/vexcode/">VEX Robotics</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/email-python/">Python Backend</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/raid/">Raid The Romans</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/flappy/">Flappy Bird</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/clicker/">Clicker Game</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/machinelearning">Machine Learning/AI</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/times/">Multipication Game</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/server/">Web Servers</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/minecraft/">Our Minecraft Server</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/projects/">Project Ideas</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/dead/">Revive an Old Project</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/progress/">See What We Are Up To</a>
-        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/about/">About Us</a>
-      </div>
-      <script src="https://HD-Projects.github.io/w3.js" type="text/javascript"></script>
-      <div class="w3-main" style="margin-left:200px">
-      <div class="w3-dark-grey" id="top">
-        <button class="w3-button w3-dark-grey w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
-        <button class="w3-button w3-display-topright" onclick="toggle()"><img src="https://hd-projects.github.io/images/dark-mode.png" class="w3-display-topright" width="20" height="20"></button>
-        <div class="w3-container">
-          <h1>About | HD Projects</h1>
-        </div>
-      </div>
-      <div class="w3-container w3-center" id="body">
-        <h2>About Us</h2>
-        <p>We are two students in the <a href="https://www.vexrobotics.com/vexedr/competition">VEX Robotics program</a> and work hard all of the school year to progam and build our robots for the season.</p>
 
-        <p> Coding is our passion and since our season ended due to COVID 19 we have had a lot more spare time to work on projects.</p>
 
-        <p>Our favorite languages are Java, Python, C++ and C#</p> 
-      </div>
-      <!--<p>Our first year in VRC we </p>-->
-      <div class="w3-container w3-dark-grey footer">
-        <a href="https://HD-Projects.github.io/github"><b>GitHubs</b></a>
-        <a href="https://HD-Projects.github.io/legal"><b>Legal</b></a>
-        <a href="https://HD-Projects.github.io/privacy"><b>Privacy Policy</b></a>
-        <a href="https://HD-Projects.github.io/license"><b>License</b></a>
-        <a href="https://HD-Projects.github.io/hire"><b>Hire Us</b></a>
-        <a href="https://HD-Projects.github.io/progress"><b>See What We Are Up To</b></a>
-      </div>
-    </body>
-  </html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img_parallax.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 . bgimg-4{
+    background-attachment: scroll;
+  }
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+
+ 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+     margin-bottom: 600px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa {font-size:50px;}
+
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 600px;
+  background-color: pink;
+}
+
+#section2 {
+  margin-top: 100px;
+  height: 200px;
+  background-color: grey;
+}
+
+p, h1 , h2 , h3 , h4 , h5 ,h6 {
+
+text-align: center;
+
+}
+
+.contactInfo {
+
+color: white;
+
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border"> About | HD Projects</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Who Are We</h3>
+  <p>   <p>We are two students in the <a href="https://www.vexrobotics.com/vexedr/competition">VEX Robotics program</a> and work hard all of the school year to progam and build our robots for the season.</p>
+
+<p> Coding is our passion and since our season ended due to COVID 19 we have had a lot more spare time to work on projects.</p>
+
+<p>Our favorite languages are Java, Python, C++ and C#</p> </p>
+
+
+
+</div>
+
+
+<div class="bgimg-1">
+  <div class="caption">
+ <h1> <a href="#section2">Contact Us</a> </h1>
+    </div>
+
+
+
+
+
+  </div>
+
+
+  </div>
+</div>
+   
+
+
+<div class="bgimg-2">
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+  </div>
+</div>
+
+
+
+
+<div class="bgimg-1">
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3>11+</h3>
+      <p>Partners</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>55+</h3>
+      <p>Projects</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3>100+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-coffee"></i></p>
+      <h3>100+</h3>
+      <p>Meetings</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="main" id="section2">
+
+<h1 class="contactInfo"> Contact Info <h1>
+
+<h1 class="contactInfo"> Email: asteroid.dodge.devs@gmail.com </h1>
+<h1 class="contactInfo"> Phone: 111-111-111 </h1>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+     <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
