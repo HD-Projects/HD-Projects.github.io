@@ -35,17 +35,17 @@ body, html {
 
 }
 .bgimg-1 {
-  background-image: url("img_parallax.jpg");
+  background-image: url("images/img_parallax.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("img_parallax2.jpg");
+  background-image: url("images/img_parallax2.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("img_parallax3.jpg");
+  background-image: url("images/img_parallax3.jpg");
   min-height: 400px;
 }
 
@@ -86,7 +86,6 @@ body {font-family: Verdana, sans-serif; margin:0}
 .slideshow-container {
   position: relative;
   background: #f1f1f1f1;
-
 }
 
 /* Slides */
@@ -94,8 +93,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   display: none;
   padding: 80px;
   text-align: center;
-
- 
 }
 
 /* Next & previous buttons */
@@ -111,7 +108,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-     margin-bottom: 600px;
 }
 
 /* Position the "next button" to the right */
@@ -126,6 +122,36 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-color: rgba(0,0,0,0.8);
   color: white;
 }
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
 
 /* The dot/bullet/indicator container */
 .dot-container {
@@ -266,31 +292,17 @@ color: white;
 
 <p>Our favorite languages are Java, Python, C++ and C#</p> </p>
 
-
-
 </div>
-
 
 <div class="bgimg-1">
   <div class="caption">
  <h1> <a href="#section2">Contact Us</a> </h1>
     </div>
-
-
-
-
-
   </div>
-
-
   </div>
 </div>
-   
-
 
 <div class="bgimg-2">
-
-
 
 <div class="slideshow-container">
 
@@ -319,13 +331,6 @@ color: white;
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-
-
-  </div>
-</div>
-
-
-
 
 <div class="bgimg-1">
 
@@ -380,8 +385,7 @@ color: white;
 
 </div>
 
-
-     <script>
+<script>
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -397,15 +401,15 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
+    }
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 </script>
