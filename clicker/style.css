@@ -182,11 +182,6 @@ height: 40px;
 height: 300px;  
 }
 
-button {
-margin: 5px;
-width: 390px;
-}
-
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -216,10 +211,6 @@ width: 390px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-
 }
 
 .dropdown-content {
