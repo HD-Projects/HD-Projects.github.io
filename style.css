@@ -1,10 +1,25 @@
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
 
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .main img{
   padding: 2% 2%;
   width: 60%; 
   border-radius: 0%;
+  width: 100%;
+  
 }
+
 .footer {
   overflow: hidden;
   background-color: #333;
