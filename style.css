@@ -1,8 +1,8 @@
-.parallax{
-  padding: 2% 2%;
-  border-radius: 0%;
-  width: 100%;
+.parallax {
+  /* The image used */
+  background-image: url("https://hd-projects.github.io/images/code-coding-connection-css.jpg");
 
+  /* Set a specific height */
   min-height: 500px; 
 
   /* Create the parallax scrolling effect */
@@ -10,22 +10,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .main img{
   padding: 2% 2%;
   border-radius: 0%;
   width: 100%;
-
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
 }
 
 .footer {
