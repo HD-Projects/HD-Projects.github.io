@@ -13,6 +13,21 @@
   
 }
 
+.main img{
+  padding: 2% 2%;
+  border-radius: 0%;
+  width: 100%;
+
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
 .footer {
   overflow: hidden;
   background-color: #333;
