@@ -21,6 +21,14 @@
   color: #000;
 }
 
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
 .main img{
   padding: 2% 2%;
   border-radius: 0%;
