@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /q/
+Disallow: /vf/
+
+Sitemap: http://hd-projects.github.io/sitemap.xml

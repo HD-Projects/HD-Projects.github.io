@@ -7,16 +7,7 @@
 
       <changefreq>Daily</changefreq>
 
-      <priority>0.5</priority>
-
-   </url>
-  <url>
-
-      <loc>https://hd-projects.github.io/404.html</loc>
-
-      <changefreq>Daily</changefreq>
-
-      <priority>0.5</priority>
+      <priority>0.8</priority>
 
    </url>
   <url>
@@ -148,6 +139,15 @@
   <url>
 
       <loc>https://hd-projects.github.io/vexcode/</loc>
+
+      <changefreq>Daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+  <url>
+
+      <loc>https://hd-projects.github.io/vexcode/vexquick/</loc>
 
       <changefreq>Daily</changefreq>
 

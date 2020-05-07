@@ -1,5 +1,4 @@
 https://hd-projects.github.io/
-https://hd-projects.github.io/404.html
 https://hd-projects.github.io/about/
 https://hd-projects.github.io/clicker/
 https://hd-projects.github.io/dead/
@@ -15,6 +14,7 @@ https://hd-projects.github.io/progress/
 https://hd-projects.github.io/projects/
 https://hd-projects.github.io/raid/
 https://hd-projects.github.io/vexcode/
+https://hd-projects.github.io/vexcode/vexquick/
 https://hd-projects.github.io/server/
 https://hd-projects.github.io/times/
 https://hd-projects.github.io/minecraft/
