@@ -3,7 +3,7 @@
   background-image: url("https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?cs=srgb&dl=codes-coding-programming-270366.jpg&fm=jpg");
 
   /* Set a specific height */
-  min-height: 700px; 
+  min-height: 100%; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
