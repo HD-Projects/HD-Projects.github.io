@@ -178,6 +178,7 @@ document.getElementById("dropPlaneUpgrade").style.display = 'none';
 }
 
 function cheatCodeCheck(event) {
+
 var cheatCode = $("#cheatCodes").val();
 
 if (cheatCode == "HD" ){
