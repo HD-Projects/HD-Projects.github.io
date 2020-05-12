@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /q/
 Disallow: /vf/
 
-Sitemap: http://hd-projects.github.io/sitemap.xml
+Sitemap: https://hdprojects.dev/sitemap.xml

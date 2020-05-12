@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
 
-      <loc>https://hd-projects.github.io/</loc>
+      <loc>https://hdprojects.dev/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -12,7 +12,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/about/</loc>
+      <loc>https://hdprojects.dev/about/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -21,7 +21,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/clicker/</loc>
+      <loc>https://hdprojects.dev/clicker/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -30,7 +30,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/dead/</loc>
+      <loc>https://hdprojects.dev/dead/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -39,7 +39,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/donate/</loc>
+      <loc>https://hdprojects.dev/donate/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -48,7 +48,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/email-python/</loc>
+      <loc>https://hdprojects.dev/email-python/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -57,7 +57,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/flappy/</loc>
+      <loc>https://hdprojects.dev/flappy/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -66,7 +66,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/github/</loc>
+      <loc>https://hdprojects.dev/github/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -75,7 +75,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/hire/</loc>
+      <loc>https://hdprojects.dev/hire/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -84,7 +84,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/legal/</loc>
+      <loc>https://hdprojects.dev/legal/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -93,7 +93,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/license/</loc>
+      <loc>https://hdprojects.dev/license/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -102,7 +102,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/privacy/</loc>
+      <loc>https://hdprojects.dev/privacy/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -111,7 +111,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/progress/</loc>
+      <loc>https://hdprojects.dev/progress/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -120,7 +120,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/projects/</loc>
+      <loc>https://hdprojects.dev/projects/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -129,7 +129,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/raid/</loc>
+      <loc>https://hdprojects.dev/raid/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -138,7 +138,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/vexcode/</loc>
+      <loc>https://hdprojects.dev/vexcode/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -147,7 +147,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/vexcode/vexquick/</loc>
+      <loc>https://hdprojects.dev/vexcode/vexquick/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -156,7 +156,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/server/</loc>
+      <loc>https://hdprojects.dev/server/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -165,7 +165,7 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/times/</loc>
+      <loc>https://hdprojects.dev/times/</loc>
 
       <changefreq>Daily</changefreq>
 
@@ -174,7 +174,16 @@
    </url>
   <url>
 
-      <loc>https://hd-projects.github.io/machinelearning/</loc>
+      <loc>https://hdprojects.dev/minecraft/</loc>
+
+      <changefreq>Daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+  <url>
+
+      <loc>https://hdprojects.dev/machinelearning/</loc>
 
       <changefreq>Daily</changefreq>
 
