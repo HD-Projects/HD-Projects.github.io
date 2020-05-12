@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159158579-3"></script>
     <script>
@@ -18,43 +18,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600&display=swap" rel="stylesheet">
     <link href="https://HD-Projects.github.io/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>See What We Are Up To | HD Open Source Projects</title>
+    <title>HD Open Source Projects</title>
     <link rel="shortcut icon" href="https://HD-Projects.github.io/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://hd-projects.github.io/dark.js" type="text/javascript"></script>
     <script src="https://hd-projects.github.io/w3.js" type="text/javascript"></script>
-</head>
-<body onload="getDarkMode()">
-    <noscript><h1 class="no-script">Please allow scripts it will make everything funchtion better on our site</h1></noscript>
-    <div w3-include-html="https://hd-projects.github.io/nav.html"></div>
-    <script>
-        w3.includeHTML();
-    </script>
-    <div class="parallax">
-        <div class="caption">
-            <span class="border"><button class="w3-button w3-xlarge" onclick="openNav()" title="Open Navigation">&#9776;</button>Blog | HD <span class="w3-hide-small w3-hide-medium">Open Source Projects</span></span>
+    </head>
+    <body onload="getDarkMode()">
+        <noscript><h1 class="no-script">Please allow scripts it will make everything funchtion better on our site</h1></noscript>
+        <div w3-include-html="https://hd-projects.github.io/nav.html"></div>
+        <script>
+            w3.includeHTML();
+        </script>
+        <div class="parallax">
+            <div class="caption">
+                <span class="border"><button class="w3-button w3-xlarge" onclick="openNav()" title="Open Navigation">&#9776;</button>Name | HD <span class="w3-hide-small w3-hide-medium">Open Source Projects</span></span>
+            </div>
         </div>
-    </div>
-    <div class="w3-container w3-center" id="body">
+      <div class="w3-container w3-center" id="body">
+        <div class="main">
+        <div class="parallax"></div>
+        </div>
 
 <h1 id="demo"></h1> <h1> Days Until Next Blog Post </h1>
 
 
       <h2>What we are doing</h2>
       <h5>Overview</h5>    
-     
+      <p><b><i>5-10-2020</i></b>
+      -We have been redoing each page one at a time and it is making a huge difference, since our last post we have added parallax images to every page and are working but we would like every site to be more like the current site. We also added 2 new pages, a <a href="https://hd-projects.github.io/contact/">contact us</a> page and a <a href="https://hd-projects.github.io/contact/">open source</a> page. in the near future we will be adding a footer and menu  template to all sites to imporove useablity and maintance.</p>
 
-  <p><b><i>5-11-2020</i></b> 
-  We have been working hard on a complete overhaul of out site, we are adding many new features and making the UI much better. The VR game we are creating is going really well, we expect that it should be done in three weeks. You can now download the Python Backend and donate to us straight from our website. </p>
+      <h5>Overview</h5>  
 
-
-
-
- <h5>Overview</h5>   
-   <p><b><i>5-10-2020</i></b> 
-5-10-2020 -We have been redoing each page one at a time and it is making a huge difference, since our last post we have added parallax images to every page and are working but we would like every site to be more like the current site. We also added 2 new pages, a contact us page and a open source page. in the near future we will be adding a footer and menu template to all sites to imporove useablity and maintance.
-</p>
-        <h5>Overview</h5>    
 
   <p><b><i>5-6-2020</i></b>
 We have been slowly overhauling pages like our about and hire pages and adding much bettter content. You can now also download the python backend straight off the website which is a helpful feature. We have also been working on VR game development and more machine learning, in a few weeks you will see a VR game on the site and also a possible machine learning demo.
@@ -91,41 +86,37 @@ We have been slowly overhauling pages like our about and hire pages and adding m
         <a href="https://HD-Projects.github.io/hire"><b>Hire Us</b></a>
         <a href="https://HD-Projects.github.io/progress"><b>See What We Are Up To</b></a>
       </div>
- 
+      <script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 11, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+    </body>
     </div>
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("May 15, 2020 15:37:25").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
-
-            // If the count down is over, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
-    <div w3-include-html="https://hd-projects.github.io/footer.html"></div>
-    <script>
-        w3.includeHTML();
-    </script>
-</body>
-</html>
+  </html>

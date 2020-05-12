@@ -1,52 +1,71 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159158579-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+<DOCTYPE html>
+  <html>
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159158579-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        gtag('config', 'UA-159158579-3');
-    </script>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <meta charset="utf-8" />
-    <meta http-equiv="content-language" content="en">
-    <meta name="description" content="Welcome to HD-Projects this is a site to show all of our open source programming projects. We have made several games and helpful tools.">
-    <meta name="keywords" content="hd projects, open source, github, hd, open source, free, HD, projects, programming, project, open source, open source projects, open source programming, coding, programing, home, tech , robot , robotics , techy , technology, colab , collabrotive , HD , hd , hd open source projects, computer coding , computrer programming, computer, computers , computing, html, css, javascript, js, ">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600&display=swap" rel="stylesheet">
-    <link href="https://HD-Projects.github.io/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Minecraft Server | HD Open Source Projects</title>
-    <link rel="shortcut icon" href="https://HD-Projects.github.io/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://hd-projects.github.io/dark.js" type="text/javascript"></script>
-    <script src="https://hd-projects.github.io/w3.js" type="text/javascript"></script>
-</head>
-<body onload="getDarkMode()">
-    <noscript><h1 class="no-script">Please allow scripts it will make everything funchtion better on our site</h1></noscript>
-    <div w3-include-html="https://hd-projects.github.io/nav.html"></div>
-    <script>
-        w3.includeHTML();
-    </script>
-    <div class="parallax">
-        <div class="caption">
-            <span class="border"><button class="w3-button w3-xlarge" onclick="openNav()" title="Open Navigation">&#9776;</button>Minecraft Server | HD <span class="w3-hide-small w3-hide-medium">Open Source Projects</span></span>
+  gtag('config', 'UA-159158579-3');
+</script>
+      <meta name="description" content="HD Projects: At HD Projects we have been always wondering how hard it would be to create your own minecraft server. This is how we created our own minecraft server.">
+      <meta name="keywords" content="hd projects, open source, github, hd, open source, free, HD, projects, ml, machine learning, machine, learning, ai, artifical intelligence, coding, programing, home, tech , robot , robotics , techy , technology, colab , collabrative , HD , hd , hd open source projects, computer coding , computrer programming, computer, computers   ">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600&display=swap" rel="stylesheet">
+      <link href="https://HD-Projects.github.io/style.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>HD Open Source Projects</title>
+      <link rel="shortcut icon" href="https://HD-Projects.github.io/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script src="https://hd-projects.github.io/dark.js" type="text/javascript"></script>
+    </head>
+    <body onload="getDarkMode()">
+      <noscript><h1 class="no-script">Please allow scripts it will make everything function better on our site</h1></noscript>
+      <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io">Home</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/donate/">Donate</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/hire/">Hire Us</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/vexcode/">VEX Robotics</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/email-python/">Python Backend</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/raid/">Raid The Romans</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/flappy/">Flappy Bird</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/clicker/">Clicker Game</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/machinelearning">Machine Learning/AI</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/times/">Multipication Game</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/server/">Web Servers</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/minecraft/">Our Minecraft Server</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/projects/">Project Ideas</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/dead/">Revive an Old Project</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/progress/">See What We Are Up To</a>
+        <a class="w3-bar-item w3-button" href="https://HD-Projects.github.io/about/">About Us</a>
+      </div>
+      <script src="https://HD-Projects.github.io/w3.js" type="text/javascript"></script>
+      <div class="w3-main" style="margin-left:200px">
+      <div class="w3-dark-grey" id="top">
+        <button class="w3-button w3-dark-grey w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+        <button class="w3-button w3-display-topright" onclick="toggle()"><img src="https://hd-projects.github.io/images/dark-mode.png" class="w3-display-topright" width="20" height="20"></button>
+        <div class="w3-container">
+          <h1>Minecraft Server | HD Projects</h1>
         </div>
-    </div>
-    <div class="w3-container w3-center w3-border" id="body">
+      </div>
+      <div class="w3-container w3-center w3-border" id="body">
         <div class="main">
-            <div class="parallax"></div>
+        <div class="parallax"></div>
         </div>
-
-        <h2>Minecraft Servers</h2>
-        <p>Here at HD-Projects we have been bored during self isolation so we have been pling some of the very popular game "Minecraft". This is how we created a minecraft server for our followers to play on. Our Minecraft server IP is coming soon we will need <a href="https://hd-projects.github.io/donate/">donations</a> to keep the server alive. We will limit the server 50 people and you can donate to get on if the spots are filled. You can sign up to see updates below. This will be a vanilla survival minecraft server running the latest snapshots to get the newest feature that have been added to the game. Please do not grief, hack, or be toxic in the chat if you do you will be IP banned permanently if you would like to appeal your ban fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLScy7JGj9jW2y5omjFDZHMCqM7NWc2xKWUW07aaoQeXijLserw/viewform?usp=sf_link">form</a>.</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5aVk53k8a5Syc90unmGTTpF1zerlXUgP7S3O4h4HA86bClQ/viewform?embedded=true" width="640" height="763" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      
+      <h2>Minecraft Servers</h2>
+      <p>Here at HD-Projects we have been bored during self isolation so we have been pling some of the very popular game "Minecraft". This is how we created a minecraft server for our followers to play on. Our Minecraft server IP is coming soon we will need <a href="https://hd-projects.github.io/donate/">donations</a> to keep the server alive. We will limit the server 50 people and you can donate to get on if the spots are filled. You can sign up to see updates below. This will be a vanilla survival minecraft server running the latest snapshots to get the newest feature that have been added to the game. Please do not grief, hack, or be toxic in the chat if you do you will be IP banned permanently if you would like to appeal your ban fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLScy7JGj9jW2y5omjFDZHMCqM7NWc2xKWUW07aaoQeXijLserw/viewform?usp=sf_link">form</a>.</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5aVk53k8a5Syc90unmGTTpF1zerlXUgP7S3O4h4HA86bClQ/viewform?embedded=true" width="640" height="763" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+      <div class="footer">
+        <a href="github.html"><b>GitHubs</b></a>
+        <a href="legal.html"><b>Legal</b></a>
+        <a href="privacy.html"><b>Privacy Policy</b></a>
+        <a href="license.html"><b>License</b></a>
+        <a href="progress.html"><b>See What We Are Up To</b></a>
+      </div>
+    </body>
     </div>
-    <div w3-include-html="https://hd-projects.github.io/footer.html"></div>
-    <script>
-        w3.includeHTML();
-    </script>
-</body>
-</html>
+  </html>
