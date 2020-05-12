@@ -281,3 +281,45 @@ img {
     display: table-cell;
     padding: 16px;
 }
+/* Pen-specific styles */
+* {
+  box-sizing: border-box;
+}
+
+section {
+  color: #fff;
+  text-align: center;
+}
+}
+
+article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+/* Pattern styles */
+.container {
+  display: table;
+  width: 100%;
+}
+
+.left-half {
+
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
+
+.right-half {
+
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+
