@@ -10,6 +10,42 @@
 
           gtag('config', 'UA-159158579-3');
       </script>
+
+      <style>
+html,
+body,
+div {
+
+  padding: 0;
+  margin: 0;
+}
+i {
+  font-size: 4em !important;
+  margin-top: 10%;
+  color: darkgrey;
+}
+
+h1 {
+  padding-top: 30px;
+  color: white !important;
+}
+
+h2 {
+  color: teal;
+}
+
+.intro {
+
+  min-height: 0vh;
+
+}
+
+
+
+        </style> 
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://www.w3schools.com/lib/w3.js"></script>
       <meta charset="utf-8" />
       <meta http-equiv="content-language" content="en">
@@ -32,26 +68,42 @@
       <script>
           w3.includeHTML();
       </script>
+
+
       <div class="parallax">
           <div class="caption">
               <span class="border"><button class="w3-button w3-xlarge" onclick="openNav()" title="Open Navigation">&#9776;</button>Home | HD <span class="w3-hide-small w3-hide-medium">Open Source Projects</span></span>
           </div>
       </div>
-      <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-          <div class="w3-third w3-section">
-              <span class="w3-xlarge">1000+</span><br>
-              Commits
-          </div>
-          <div class="w3-third w3-section">
-              <span class="w3-xlarge">15+</span><br>
-              Projects
-          </div>
-          <div class="w3-third w3-section">
-              <span class="w3-xlarge">450+</span><br>
-              Total Contibutions
-          </div>
-      </div>
-      <div id="repl" class="w3-red w3-container"></div>
+<div class="intro">
+  </div>
+
+
+
+<div class="container-fluid text-center">
+  <h1>Some cool facts</h1>
+  <div class="row">
+    <div class="col-sm-3">
+      <i class="fa fa-user"></i>
+      <h2 data-max="450">+ Contributions</h2>
+    </div>
+    <div class="col-sm-3">
+      <i class="fa fa-code"></i>
+      <h2 data-max="15000">+ Lines of code</h2>
+    </div>
+    <div class="col-sm-3">
+      <i class="fa fa-lock"></i>
+      <h2 data-max="15">+ Projects</h2>
+    </div>
+    <div class="col-sm-3">
+      <i class="fa fa-briefcase"></i>
+      <h2 data-max="3" id="test"> Developers</h2>
+    </div>
+  </div>
+
+
+
+
       <div class="container">
           <h2>Our Story</h2>
           <p>We are two students that have been working hard on all of our projects and we would like to share our projects with you. All of our projects you are free to use in any way you would like and if you find any errors or bug feel free to <a href="/contact/">contact us</a>. </p>
@@ -116,5 +168,59 @@
       <script>
           w3.includeHTML();
       </script>
+
+      <script>
+function inVisible(element) {
+  //Checking if the element is
+  //visible in the viewport
+  var WindowTop = $(window).scrollTop();
+  var WindowBottom = WindowTop + $(window).height();
+  var ElementTop = element.offset().top;
+  var ElementBottom = ElementTop + element.height();
+  //animating the element if it is
+  //visible in the viewport
+  if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+    animate(element);
+}
+
+function animate(element) {
+  //Animating the element if not animated before
+  if (!element.hasClass('ms-animated')) {
+    var maxval = element.data('max');
+    var html = element.html();
+    element.addClass("ms-animated");
+    $({
+      countNum: element.html()
+    }).animate({
+      countNum: maxval
+    }, {
+      //duration 5 seconds
+      duration: 5000,
+      easing: 'linear',
+      step: function() {
+        element.html(Math.floor(this.countNum) + html);
+      },
+      complete: function() {
+        element.html(this.countNum + html);
+      }
+    });
+  }
+
+}
+
+//When the document is ready
+$(function() {
+  //This is triggered when the
+  //user scrolls the page
+  $(window).scroll(function() {
+    //Checking if each items to animate are 
+    //visible in the viewport
+    $("h2[data-max]").each(function() {
+      inVisible($(this));
+    });
+  })
+});
+
+        </script>
   </body>
   </html>
