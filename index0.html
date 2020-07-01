@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159158579-3"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'UA-159158579-3');
+      </script>
+
+      <style>
+      %%css%%
+      </style>
+
+
+      <div class="parallax">
+          <div class="caption">
+              <span class="border">Home | HD <span class="w3-hide-small w3-hide-medium">Open Source Projects</span></span>
+          </div>
+      </div>
+
+      <form action="blog.php" method="post">
+First Name: <input type="text" name="fname" maxlength="16"><br>
+Last Name: <input type="text" name="lname" maxlength="16"><br>
+Subject: <input type="text" name="subject" maxlength="128"><br>
+Content:<br> <textarea name="content" cols="width" wrap="soft" maxlength="256">
+
+</textarea><br><br>
+<input type="submit">
+</form>
+%%posts%%
+%%post%%
+
+  </body>
+  </html>
