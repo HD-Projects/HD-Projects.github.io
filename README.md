@@ -1,5 +1,17 @@
-This is our code for our website.
+# HD Open Source Projects
 
-View our website here https://hd-projects.github.io
+This is the official HD Projects GitHub repository
 
-[![Run on Repl.it](https://repl.it/badge/github/HD-Projects/HD-Projects.github.io)](https://repl.it/github/HD-Projects/HD-Projects.github.io)
+## Contributing
+
+Read the [CONTRUBUTING.md](CONTRUBUTING.md) for how to contribute and [CONTRIBUTORS.md](CONTRIBUTORS.md) to see how has contributed
+
+## Our website
+
+### GitHub Pages Deployment
+
+This is the repository for out GitHub pages Deployment the link is [hdprojects.dev](hdprojects.dev)
+
+### PHP Deployment
+
+To find out more about the PHP deployment go to [https://github.com/HD-Projects/HD-Projects.github.io/tree/PHP](https://github.com/HD-Projects/HD-Projects.github.io/tree/PHP)
