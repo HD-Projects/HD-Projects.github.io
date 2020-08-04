@@ -2,8 +2,8 @@ var darkMode;
 
 function getDarkMode(){
   var currentURL = window.location.href;
-  if(currentURL == "https://HD-Projectsgithubio--ad101lab.repl.co"){
+  if(!(-1 == currentURL.search("repl"))){
     let top = document.getElementById("repl")
-    top.innerHTML = "<h1>This is an indev website go https://hd-projects.github.io/ to get a more stable version</h1>"
+    top.innerHTML = "<h1>This is an indev website go <a href=\"https://hd-projects.github.io/\">Here</a> to get a more stable version</h1>"
   }
 }

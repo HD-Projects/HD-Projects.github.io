@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159158579-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-159158579-3');
+        </script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <meta charset="utf-8" />
+        <meta http-equiv="content-language" content="en">
+        <meta name="description" content="Welcome to HD-Projects this is a site to show all of our open source programming projects. We have made several games and helpful tools.">
+        <meta name="keywords" content="hd projects, open source, github, hd, open source, free, HD, projects, ">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600&display=swap" rel="stylesheet">
+        <link href="https://hdprojects.dev/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HD Open Source Projects</title>
+        <link rel="shortcut icon" href="https://hdprojects.dev/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://hdprojects.dev/dark.js" type="text/javascript"></script>
+        <script src="https://hdprojects.dev/w3.js" type="text/javascript"></script>
+    </head>
+    <body onload="getDarkMode()">
+        <noscript><h1 class="no-script">Please allow scripts it will make everything funchtion better on our site</h1></noscript>
+        <div w3-include-html="https://hdprojects.dev/nav.html"></div>
+        <script>
+            w3.includeHTML();
+        </script>
+        <div class="parallax">
+            <div class="caption">
+                <span class="border"><button class="w3-button w3-xlarge" onclick="openNav()" title="Open Navigation">&#9776;</button>Kerbal Kontroller | HD <span class="w3-hide-small w3-hide-medium">Open Source Projects</span></span>
+            </div>
+        </div>
+        
+        <div class="w3-container">
+            <h2>Kerbal Kontroller</h2>
+            <p>This is a external controller for the game Kerbal Space Program you need a <a href="https://www.sparkfun.com/products/15442">Artemis ATP</a>,
+                 <a href="https://www.sparkfun.com/products/15484">Artemis Module</a>, or any other board with ~30 digital interupts(Why did we write the code like this,
+                  hope to get Arduino Mega suport soon).</p>
+            <h2>Table Of Contents</h2>
+            <hr>
+            <ul>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#Built-it-yourself">Built it yourself</a></li>
+                <li><a href="#File-system">Files</a></li>
+            </ul>
+            <h2 id="design">Design</h2>
+            <hr>
+            <p>After a little research on past designs for a kerbal controller 
+                we found that we wanted one that was bigger and used more high quality switches. After some frequency research(Playing KSP) 
+                we found that you pressed these buttons</p>
+            <ul>
+                <li>Throttle Up</li>
+                <li>Cut Throttle</li>
+                <li>Fine Throttle Control(Dial or Slide Potentiometer)</li>
+                <li>Action groups</li>
+                <li>WASD + Roll</li>
+                <li>SAS Options</li>
+                <li>Stage</li>
+                <li>Quick save</li>
+                <li>Revert Buttons</li>
+                <li>Manuever Buttons</li>
+                <li>Time Warp</li>
+            </ul>
+            <p>We looked at this list and thought that it would be to many pins(~45) to implement on one arduino or RPi and we narrowed it down to this list.</p>
+            <ul>
+                <li>Stage</li>
+                <li>Throttle Dial</li>
+                <li>WASD + Roll</li>
+                <li>Action Groups(6)</li>
+                <li>Internal Action groups</li>
+                <li>SAS, RCS, Modable switch</li>
+                <li>Quick Save, Revert save</li>
+                <li>4 Mod buttons</li>
+            </ul>
+            <p>These buttons and switches took up about 25 pins so they could fit easly on one arduino so we moved on to designing the layout of the board.</p>
+            <h2>Designing The Layout</h2>
+            <hr>
+            <h3>First Design</h3>
+            <p>For our fist design we wanted to have a big board 30cm wide and 20cm tall, it was going to be huge! We kept adding on to this design and ended up with this design in this design we added 5 modable buttons for different buttons on the keyboard that the end user could change.</p>
+            <img src="https://github.com/HD-Projects/Kerbal-Kontroller/blob/master/Images/First-Design.jpg">
+            <p>We worked on this design for a while and created 2 prototypes in this folder or this folder We found that this design was going to be way too big and changed over to our much smaller second design</p>
+            <h3>Second and Final Design</h3>
+            <p>On our second design we got rid of the huge time warp selector, although helpful used up too many pins and could be a lot smaller. for this design we designed the layout of the buttons and switches then chose the size of the plexiglass we wanted</p>
+            <img src="https://github.com/HD-Projects/Kerbal-Kontroller/raw/master/Images/Final-Design.jpg">
+            <p>This was a much smaller form factor and only have 22 buttons, 6 switches and one analog gauge, for a total of 28 digital pins, and only on analog pins.</p>
+            <p>After we finnished the design we wanted to have a to scale model. we wanted some costomizablity for a flat design or a proped up design this is our first prototype of a proped up design.</p>
+            <p>Front</p>
+            <img src="https://github.com/HD-Projects/Kerbal-Kontroller/blob/master/Images/Front-proped-up.jpg">
+            <p>Side</p>
+            <img src="https://github.com/HD-Projects/Kerbal-Kontroller/blob/master/Images/Side-proped-up.jpg">
+            <img src="https://github.com/HD-Projects/Kerbal-Kontroller/blob/master/Images/Proped-up.jpg">
+            <h2 id="Built-it-yourself">Built it yourself</h2>
+            <hr>
+            <p>Go <a href="https://hdprojects.dev/ksp/diy">HERE</a></p>
+            <h2 id="File-system">File System</h2>
+            <h3>Design Seciton</h3>
+            <p>The dseisng seciton is split into threee parts for each revision</p>
+            <ul>
+                <li>v.1
+                    <li>v.1 was our first design for our kerbal controller. This design was never asembled in CAD so go to v.2 for refence for the 1 layout</li>
+                </li>
+                <li>v.2
+                    <li>v.2 was the same design just we totally redid the CAD Model to fix the many errors we had before.</li>
+                </li>
+                <li>Final
+                    <li>This is the only totally finnished design that would acctually work if you tried it.</li>
+                </li>
+            </ul>
+        </div>
+
+        <div w3-include-html="https://hdprojects.dev/footer.html"></div>
+        <script>
+            w3.includeHTML();
+        </script>
+    </body>
+</html>
