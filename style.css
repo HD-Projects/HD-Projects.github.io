@@ -6,8 +6,8 @@
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    border-radius: 60px/15px;
+    background-color: rgb(134, 134, 134); /* Black fallback color */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -20,6 +20,14 @@
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
+
+button {
+  border-radius: 10px;
+}
+
+span {
+  border-radius: 10px;
+} 
 
 /* The navigation links inside the overlay */
 .overlay a {
@@ -76,11 +84,11 @@
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #000;
+  color: rgb(114, 114, 114);
 }
 
 .caption span.border {
-  background-color: #111;
+  background-color: rgb(104, 104, 104);
   color: #fff;
   padding: 18px;
   font-size: 25px;
@@ -95,7 +103,6 @@
 
 .footer {
   overflow: hidden;
-  background-color: #333;
   font-family: Arial;
   width: 100%;
 }
@@ -103,21 +110,20 @@
 .footer a {
   float: left;
   font-size: 14px;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
 }
 
-.footer a:hover {
-  float: left;
-  font-size: 14px;
-  color: rgb(43, 43, 43);
-  text-align: center;
-  text-decoration: none;
-  cursor: default;
-  background-color: #ffffff;
+.boxes {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(104, 104, 104);
+  border-width: 10%;
+  border-style: solid;
+  border-color: white;
 }
+
 
 .bullet{
   text-align: left;
