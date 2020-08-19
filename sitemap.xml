@@ -75,15 +75,6 @@
    </url>
   <url>
 
-      <loc>https://hdprojects.dev/hire/</loc>
-
-      <changefreq>Daily</changefreq>
-
-      <priority>0.5</priority>
-
-   </url>
-  <url>
-
       <loc>https://hdprojects.dev/legal/</loc>
 
       <changefreq>Daily</changefreq>
@@ -188,6 +179,33 @@
       <changefreq>Daily</changefreq>
 
       <priority>0.5</priority>
+
+   </url>
+  <url>
+
+      <loc>https://hdprojects.dev/ksp/</loc>
+
+      <changefreq>Daily</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>
+  <url>
+
+      <loc>https://hdprojects.dev/ksp/diy/</loc>
+
+      <changefreq>Daily</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>
+  <url>
+
+      <loc>https://hdprojects.dev/ksp/kontroller/</loc>
+
+      <changefreq>Daily</changefreq>
+
+      <priority>0.7</priority>
 
    </url>
 </urlset>
