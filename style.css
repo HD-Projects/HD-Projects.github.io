@@ -20,16 +20,9 @@
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-button {
-  border-radius: 10px;
-}
-
-span {
-  border-radius: 10px;
-} 
-
 /* The navigation links inside the overlay */
 .overlay a {
+    font-weight: bold !important;
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -49,6 +42,18 @@ span {
     top: 20px;
     right: 45px;
     font-size: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hide-small {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hide-medium {
+    display: none;
+  }
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -78,19 +83,37 @@ span {
 }
 
 .caption {
-
+  padding: 5%;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 30%;
   width: 100%;
   text-align: center;
   color: rgb(114, 114, 114);
-  animation: captionMove 1s 1;
+  animation: captionMove 2s 1;
 }
 
 @keyframes captionMove {
-  from {top: -0%;}
-  to {top: 50%;}
+  from {top: -10%;}
+  to {top: 30%;}
+}
+
+.caption button {
+  background-color: rgb(104, 104, 104);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 8px 16px;
+  overflow: hidden;
+  transition-property: background-color; /* Apply transition effect on the width */
+  transition-duration: 0.25s; /* Transition will last 1 second */
+  transition-timing-function: linear; /* Timing function to specify a linear transition type */
+  transition-delay: 0s; /* Transition starts after 1 second */
+}
+
+.caption button:hover {
+  background-color: #bbb;
 }
 
 .caption span.border {
@@ -124,6 +147,17 @@ span {
   border-color: white;
 }
 
+.half {
+  width:50%;
+}
+
+.third {
+  width:33%;
+}
+
+.fourth {
+  width:25%;
+}
 
 .bullet{
   text-align: left;
@@ -144,6 +178,18 @@ ul {
   text-align: left;
 }
 
+* a {
+  color: #292929;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+* a:visited {
+  color: #292929;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 body, html {
     height: 100%;
     margin: 0;
@@ -152,21 +198,28 @@ body, html {
     line-height: 1.8;
 }
 
+button {
+  border-radius: 10px;
+}
+
+span {
+  border-radius: 10px;
+} 
+
+/* Webkit area */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
