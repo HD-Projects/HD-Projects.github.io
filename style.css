@@ -20,6 +20,10 @@
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
+.homePageSide {
+   display: inline-flex;
+}
+
 .overlay a:visited {
     font-weight: bold !important;
     padding: 8px;
