@@ -1,0 +1,107 @@
+//cooie clicker
+
+var minerMachine,
+    myVar,
+    airdroppper,
+    clickerSpeed = 2e3,
+    airdropPlanes = 0,
+    cookiesPerSecond = 0,
+    iterationVar3 = 0,
+    iterationVar2 = 0,
+    iterationVar1 = 0,
+    minerPrice = 15,
+    machinePrice = 100,
+    cookieMachines = 0,
+    machineChipsPerSecond = 5,
+    autoclickerChipsPerSecond = 0.5,
+    clicks = 0,
+    miners = 0,
+    airdropPrice = 2e3,
+    clicksPerCookie = 1,
+    dropPlaneChipsPerSecond = 25,
+    minerMachineSpeed = 200,
+    airdropPlaneDropSpeed = 40;
+function addClick() {
+    (clicks += clicksPerCookie), (document.getElementById("chips").innerHTML = clicks);
+}
+function addDude() {
+    clicks > minerPrice - 1 && ((clicks += -minerPrice), (miners += 1), mine(), (iterationVar2 += 1), (minerPrice = Math.pow(1.8, iterationVar2) + 15), (minerPrice = Math.round(minerPrice)), (cookiesPerSecond += autoclickerChipsPerSecond)),
+        document.getEl,
+        (document.getElementById("cookiesPerSecond").innerHTML = cookiesPerSecond),
+        (document.getElementById("miner").innerHTML = miners),
+        (document.getElementById("chips").innerHTML = clicks),
+        (document.getElementById("addAnAutoclicker").innerHTML = minerPrice);
+}
+function cookieMachine() {
+    clicks > machinePrice - 1 &&
+        ((clicks += -machinePrice), (cookieMachines += 1), (iterationVar1 += 1), (cookiesPerSecond += machineChipsPerSecond), (machinePrice = Math.pow(4.8, iterationVar1) + 100), (machinePrice = Math.round(machinePrice)), cookieMine()),
+        (document.getElementById("cookiesPerSecond").innerHTML = cookiesPerSecond),
+        (document.getElementById("machines").innerHTML = cookieMachines),
+        (document.getElementById("chips").innerHTML = clicks),
+        (document.getElementById("machinePrice").innerHTML = machinePrice);
+}
+function airdrop() {
+    clicks > airdropPrice - 1 &&
+        ((clicks += -airdropPrice),
+        (airdropPlanes += 1),
+        (iterationVar3 += 1),
+        (cookiesPerSecond += dropPlaneChipsPerSecond),
+        (airdropPrice = Math.pow(8.8, iterationVar3) + 2e3),
+        (airdropPrice = Math.round(airdropPrice)),
+        cookieMine(),
+        airdropBringer()),
+        (document.getElementById("cookiesPerSecond").innerHTML = cookiesPerSecond),
+        (document.getElementById("chips").innerHTML = clicks),
+        (document.getElementById("airdropPlanes").innerHTML = airdropPlanes),
+        (document.getElementById("airdropPrice").innerHTML = airdropPrice);
+}
+function airdropBringer() {
+    airdropper = setInterval(addClick, airdropPlaneDropSpeed);
+}
+function cookieMine() {
+    minerMachine = setInterval(addClick, minerMachineSpeed);
+}
+function mine() {
+    myVar = setInterval(addClick, clickerSpeed);
+}
+function popupTrigger() {
+    document.getElementById("myPopup").classList.toggle("show"), window.setTimeout(hidePopup, 300);
+}
+function hidePopup() {
+    document.getElementById("myPopup").classList.toggle("show");
+}
+function sugarCookie() {
+    clicks >= 5e3 &&
+        ((clicks += -5e3),
+        (clicksPerCookie += 0.5),
+        (document.getElementById("clicksPerCookie").innerHTML = clicksPerCookie),
+        (document.getElementById("chips").innerHTML = clicks),
+        (machineChipsPerSecond *= 1.5),
+        (autoclickerChipsPerSecond *= 1.5),
+        (dropPlaneChipsPerSecond *= 1.5),
+        (document.getElementById("theCookie").src = "sugarcookie.png"),
+        (document.getElementById("cookieUpgradeButton").style.display = "none"));
+}
+function fasterAutoclickers() {
+    clicks > 1e3 && ((clicks += -1e3), (clickerSpeed = 1500), (document.getElementById("fasterAutoclickersID").style.display = "none"), (document.getElementById("chips").innerHTML = clicks), (autoclickerChipsPerSecond *= 1.25));
+}
+function betterMachines() {
+    clicks > 3e3 && ((clicks += -3e3), (minerMachineSpeed += -50), (machineChipsPerSecond *= 1.25), (document.getElementById("chips").innerHTML = clicks), (document.getElementById("betterMachines").style.display = "none"));
+}
+function jetPlaneUpgrade() {
+    clicks > 2e3 && ((clicks += -2e3), (airdropPlaneDropSpeed += -10), (dropPlaneChipsPerSecond *= 1.25), (document.getElementById("chips").innerHTML = clicks), (document.getElementById("dropPlaneUpgrade").style.display = "none"));
+}
+function cheatCodeCheck(e) {
+    "HD" == $("#cheatCodes").val() && ((clicks += 1e3), (document.getElementById("chips").innerHTML = clicks));
+}
+$("#cheatForm").on("submit", cheatCodeCheck);
+
+
+//dark .
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
