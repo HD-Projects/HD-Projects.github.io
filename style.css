@@ -20,7 +20,7 @@
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-.overlay a {
+.overlay a:visited {
     font-weight: bold !important;
     padding: 8px;
     text-decoration: none;
@@ -30,11 +30,22 @@
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
+.overlay a {
+    font-weight: bold !important;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.5s; /* Transition effects on hover (color) */
+}
+
 /* The navigation links inside the overlay */
 
     /* When you mouse over the navigation links, change their color */
     .overlay a:hover, .overlay a:focus {
-        color:#818181;
+        color:#acacac;
+        font-size: 45px;
     }
 
 /* Position the close button (top right corner) */
@@ -43,12 +54,20 @@
     top: 20px;
     right: 45px;
     font-size: 60px;
+    transition: 0.5s;
 }
 
 @media only screen and (max-width: 600px) {
   .hide-small {
     display: none;
   }
+}
+
+.sideBySideDiv {
+    display: inline-block;
+    width: 25px;
+    height: 50px;
+    background-color: grey;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -107,10 +126,10 @@
   white-space: nowrap;
   padding: 8px 16px;
   overflow: hidden;
-  transition-property: background-color; /* Apply transition effect on the width */
-  transition-duration: 0.25s; /* Transition will last 1 second */
-  transition-timing-function: linear; /* Timing function to specify a linear transition type */
-  transition-delay: 0s; /* Transition starts after 1 second */
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  transition-timing-function: linear; 
+  transition-delay: 0.25s;
 }
 
 .caption button:hover {
@@ -367,4 +386,10 @@ body {
   width: 360px;
   height: 400px;
   background: white;
+}
+
+li {
+
+
+  
 }
