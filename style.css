@@ -20,7 +20,7 @@
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-.homePageSide {
+.homePageSide , homePageSideWrapper{
    display: inline-flex;
 }
 
