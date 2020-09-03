@@ -64,7 +64,6 @@
 }
 
 .sideBySideDiv {
-    display: inline-block;
     width: 25px;
     height: 50px;
     background-color: grey;
