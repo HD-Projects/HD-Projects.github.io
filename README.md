@@ -2,6 +2,8 @@
 
 This is the official HD Projects GitHub repository
 
+[![CodeFactor](https://www.codefactor.io/repository/github/ad101-lab/hd-projects.github.io/badge)](https://www.codefactor.io/repository/github/ad101-lab/hd-projects.github.io)
+
 ## Contributing
 
 Read the [CONTRUBUTING.md](CONTRUBUTING.md) for how to contribute and [CONTRIBUTORS.md](CONTRIBUTORS.md) to see how has contributed
