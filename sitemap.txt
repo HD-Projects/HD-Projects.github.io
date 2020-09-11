@@ -6,7 +6,6 @@ https://hdprojects.dev/donate/
 https://hdprojects.dev/email-python/
 https://hdprojects.dev/flappy/
 https://hdprojects.dev/github/
-https://hdprojects.dev/hire/
 https://hdprojects.dev/legal/
 https://hdprojects.dev/license/
 https://hdprojects.dev/privacy/
@@ -19,3 +18,6 @@ https://hdprojects.dev/server/
 https://hdprojects.dev/times/
 https://hdprojects.dev/minecraft/
 https://hdprojects.dev/machinelearning/
+https://hdprojects.dev/ksp/
+https://hdprojects.dev/ksp/diy/
+https://hdprojects.dev/ksp/kontroller/

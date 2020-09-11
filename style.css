@@ -6,8 +6,7 @@
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    background-color: rgba(0, 0, 0, 0.87);/* Black fallback color */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -21,8 +20,35 @@
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-/* The navigation links inside the overlay */
-.overlay a {
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.overlay a:visited {
+    font-weight: bold !important;
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -31,9 +57,22 @@
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
+.overlay a {
+    font-weight: bold !important;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.5s; /* Transition effects on hover (color) */
+}
+
+/* The navigation links inside the overlay */
+
     /* When you mouse over the navigation links, change their color */
     .overlay a:hover, .overlay a:focus {
-        color: #f1f1f1;
+        color:#acacac;
+        font-size: 45px;
     }
 
 /* Position the close button (top right corner) */
@@ -42,6 +81,25 @@
     top: 20px;
     right: 45px;
     font-size: 60px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .hide-small {
+    display: none;
+  }
+}
+
+.sideBySideDiv {
+    width: 25px;
+    height: 50px;
+    background-color: grey;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hide-medium {
+    display: none;
+  }
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -71,31 +129,49 @@
 }
 
 .caption {
+  padding: 5%;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 30%;
   width: 100%;
   text-align: center;
-  color: #000;
+  color: rgb(114, 114, 114);
+  animation: captionMove 2s 1;
+}
+
+@keyframes captionMove {
+  from {top: -10%;}
+  to {top: 30%;}
+}
+
+.caption button {
+  background-color: rgb(104, 104, 104);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 8px 16px;
+  overflow: hidden;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  transition-timing-function: linear; 
+  transition-delay: 0.25s;
+}
+
+.caption button:hover {
+  background-color: #bbb;
 }
 
 .caption span.border {
-  background-color: #111;
+  background-color: rgb(104, 104, 104);
   color: #fff;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 5px;
 }
 
-.main img{
-  padding: 2% 2%;
-  border-radius: 0%;
-  width: 100%;
-}
-
 .footer {
   overflow: hidden;
-  background-color: #333;
   font-family: Arial;
   width: 100%;
 }
@@ -103,20 +179,30 @@
 .footer a {
   float: left;
   font-size: 14px;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
 }
 
-.footer a:hover {
-  float: left;
-  font-size: 14px;
-  color: rgb(43, 43, 43);
-  text-align: center;
-  text-decoration: none;
-  cursor: default;
-  background-color: #ffffff;
+.boxes {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(104, 104, 104);
+  border-width: 10%;
+  border-style: solid;
+  border-color: white;
+}
+
+.half {
+  width:50%;
+}
+
+.third {
+  width:33%;
+}
+
+.fourth {
+  width:25%;
 }
 
 .bullet{
@@ -138,44 +224,51 @@ ul {
   text-align: left;
 }
 
-.no-script {
-  font-size:  200%;
+* a {
+  color: #292929;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-.full-width {
-  width: 90%;
-}
-
-img {
-  text-align: center;
+* a:visited {
+  color: #292929;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 body, html {
     height: 100%;
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
+    color: black;
     line-height: 1.8;
 }
+
+button {
+  border-radius: 10px;
+}
+
+span {
+  border-radius: 10px;
+} 
+
+/* Webkit area */
 
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 .statArea {
     background-color: grey;
@@ -186,31 +279,8 @@ body, html {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .container {
     padding: 32px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both
-}
-
-.column-66 {
-    float: left;
-    width: 66.66666%;
-    padding: 20px;
-}
-
-.column-33 {
-    float: left;
-    width: 33.33333%;
-    padding: 20px;
 }
 
 .large-font {
@@ -246,40 +316,6 @@ img {
     img {
         margin: auto;
     }
-}
-
-
-.box div {
-    text-align: center;
-    display: inline-block;
-    padding: 15px;
-    margin: 35px;
-    width: 250px;
-    text-align: center;
-    color: #000000;
-    font-family: arial, sans-serif;
-}
-
-.green {
-    background-color: gray;
-}
-
-.blue {
-    background-color: gray;
-}
-
-.gray {
-    background-color: gray;
-}
-
-.col-container {
-    display: table;
-    width: 100%;
-}
-
-.col {
-    display: table-cell;
-    padding: 16px;
 }
 
 .chart {
@@ -320,52 +356,6 @@ tr:nth-child(even) {
   box-sizing: border-box;
 }
 
-.columns {
-  float: left;
-  width: 33.3%;
-  padding: 8px;
-}
-
-.price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
-}
-
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
-}
-
-.price .grey {
-  background-color: #eee;
-  font-size: 20px;
-}
-
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-}
-
 @media only screen and (max-width: 600px) {
   .columns {
     width: 100%;
@@ -377,87 +367,6 @@ body {
   color: black;
 }
 
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.left {
-  left: 0;
-  background-color: #111;
-}
-
-.right {
-  right: 0;
-  background-color: black;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-}
-button {
-text-align: center;
-font-size: 30px
-
-
-}
 
 .smartphone {
   position: relative;
@@ -468,10 +377,10 @@ font-size: 30px
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
-
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-/* The horizontal line on the top of the device */
 .smartphone:before {
   content: '';
   display: block;
@@ -485,7 +394,6 @@ font-size: 30px
   border-radius: 10px;
 }
 
-/* The circle on the bottom of the device */
 .smartphone:after {
   content: '';
   display: block;
@@ -500,20 +408,14 @@ font-size: 30px
 
 }
 
-/* The screen (or content) of the device */
 .smartphone .content {
   width: 360px;
   height: 400px;
   background: white;
 }
 
-#donationLink {
+li {
 
-color: blue;
 
-}
-
-#signUP {
-
-  text-align: center;
+  
 }

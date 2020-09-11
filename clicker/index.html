@@ -57,8 +57,8 @@
             </div>
 
 
-          <a href="https://github.com/HD-Projects/HD-Projects.github.io"><img src="github.png" class="icon" alt="GitHub"></a> 
-          <a href="https://hdprojects.dev/donate/"><img src="donateButton.png" class="icon" alt="donate"></a>
+          <a href="https://github.com/HD-Projects/HD-Projects.github.io"><img src="github.png" alt="Veiw our github" class="icon" alt="GitHub"></a> 
+          <a href="https://hdprojects.dev/donate/"><img src="donateButton.png" alt="donate to us" class="icon" alt="donate"></a>
 
           <a href="https://forms.gle/AFBGzv9QeT8HHzcF9"> <img src="subscribe.jpg" class="icon" alt="subscribe to our mailing list"> </a>
 
@@ -75,7 +75,7 @@
 
           <div class="popup" onclick="popupTrigger()">
           <span class="popuptext" id="myPopup"> + <span id="clicksPerCookie">    1 </span> Chips</span>   
-          <img src="cookie.png" onclick="addClick()" id="theCookie">
+          <img src="cookie.png" alt="cookieMachine" onclick="addClick()" id="theCookie">
           </div>
           <br>
           <span id="cookiesPerSecond"> 0 </span> <span class="cpsData"> chips per second </span>
@@ -93,11 +93,11 @@
 
           <article id="buyButtons">
 
-          <img class="buttonId"src="cursor.jpg"> <button onclick="addDude()"> Add An Autoclicker For <span id="addAnAutoclicker"> 15 </span> <span> chips </span></button>  <br>
-          <img class="buttonId" src="machine.jpg"> <button onclick="cookieMachine()"> Add a Cookie Machine For <span id="machinePrice">100 </span> <span> 
+          <img class="buttonId"src="cursor.jpg" alt="cursor> <button onclick="addDude()"> Add An Autoclicker For <span id="addAnAutoclicker"> 15 </span> <span> chips </span></button>  <br>
+          <img class="buttonId" src="machine.jpg" alt="machine> <button onclick="cookieMachine()"> Add a Cookie Machine For <span id="machinePrice">100 </span> <span> 
           chips</span></button> <br>
 
-          <img class="buttonId" src="airdrop.jpg"> <button onclick="airdrop()"> Add A Drop Plane For <span id="airdropPrice" > 2000 </span> <span> chips </span> </button> <br>
+          <img class="buttonId" src="airdrop.jpg" alt="airdrop> <button onclick="airdrop()"> Add A Drop Plane For <span id="airdropPrice" > 2000 </span> <span> chips </span> </button> <br>
             
           </article>
           <div>
@@ -127,13 +127,8 @@
 
           </footer>
       </div>
-      <div class="footer">
-        <a href="github.html"><b>GitHubs</b></a>
-        <a href="legal.html"><b>Legal</b></a>
-        <a href="privacy.html"><b>Privacy Policy</b></a>
-        <a href="license.html"><b>License</b></a>
-        <a href="progress.html"><b>See What We Are Up To</b></a>
-      </div>
-    </body>
-    </div>
+      <div w3-include-html="https://hdprojects.dev/footer.html"></div>
+        <script>
+            w3.includeHTML();
+        </script>
   </html>
