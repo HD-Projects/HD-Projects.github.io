@@ -22,6 +22,8 @@ The code of conduct is found at [`CODE-OF-CONDUCT.md`](CODE-OF-CONDUCT.md)
 
 ## Communication
 
+If you have any questions about anything about the repo please go to our ['Discord Server'](https://discord.gg/SucMbpg) and go to the contributing
+
 GitHub issues are the primary way for communicating about specific proposed changes to this project.
 
 In both contexts, please follow the conduct guidelines above. Language issues are often contentious and we'd like to keep discussion brief, civil and focused on what we're actually doing, not wandering off into too much imaginary stuff.
