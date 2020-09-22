@@ -4,10 +4,10 @@ This is the official HD Projects GitHub repository
 
 [![CodeFactor](https://www.codefactor.io/repository/github/ad101-lab/hd-projects.github.io/badge)](https://www.codefactor.io/repository/github/ad101-lab/hd-projects.github.io)
 [![Gitter](https://badges.gitter.im/HD-Projects/community.svg)](https://gitter.im/HD-Projects/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![HitCount](http://hits.dwyl.com/{username}/https://githubcom/HD-Projects/HD-Projectsgithubio.svg)](http://hits.dwyl.com/{username}/https://githubcom/HD-Projects/HD-Projectsgithubio)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
-[![Website monip.org](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](http://monip.org/)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![HitCount](http://hits.dwyl.com/{username}/https://githubcom/HD-Projects/HD-Projectsgithubio.svg)](http://hits.dwyl.com/{https://githubcom/HD-Projects/HD-Projectsgithubio)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/HD-Projects/HD-Projects.github.iographs/commit-activity)
+[![Website monip.org](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](http://hdprojects.dev/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://hdprojects.dev/license/)
 [![Discord](https://img.shields.io/discord/591914197219016707.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/9HFzad)
 ## Contributing
 
