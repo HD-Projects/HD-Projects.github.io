@@ -4,7 +4,7 @@ This is the official HD Projects GitHub repository
 
 [![CodeFactor](https://www.codefactor.io/repository/github/ad101-lab/hd-projects.github.io/badge)](https://www.codefactor.io/repository/github/ad101-lab/hd-projects.github.io)
 [![Gitter](https://badges.gitter.im/HD-Projects/community.svg)](https://gitter.im/HD-Projects/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
+[![HitCount](http://hits.dwyl.com/{username}/https://githubcom/HD-Projects/HD-Projectsgithubio.svg)](http://hits.dwyl.com/{username}/https://githubcom/HD-Projects/HD-Projectsgithubio)
 ## Contributing
 
 Read the [CONTRUBUTING.md](CONTRUBUTING.md) for how to contribute and [CONTRIBUTORS.md](CONTRIBUTORS.md) to see how has contributed
