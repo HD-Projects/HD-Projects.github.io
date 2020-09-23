@@ -1,92 +1,86 @@
 <!DOCTYPE html>
-    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159158579-3"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-
-            gtag('config', 'UA-159158579-3');
-        </script>
-        <script src="https://www.w3schools.com/lib/w3.js"></script>
-        <meta charset="utf-8" />
-        <meta http-equiv="content-language" content="en">
-        <meta name="description" content="About us at HD Open Source Projects, we are students from Westview Middle School and would like to share our open source projects with you.">
-        <meta name="keywords" content="hd projects, open source, github, hd, open source, free, HD, projects, ">
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600&display=swap" rel="stylesheet">
-        <link href="https://hdprojects.dev/style.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>About Us | HD Open Source Projects</title>
-        <link rel="shortcut icon" href="https://hdprojects.dev/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <script src="https://hdprojects.dev/dark.js" type="text/javascript"></script>
-        <script src="https://hdprojects.dev/w3.js" type="text/javascript"></script>
-    </head>
-    <body onload="getDarkMode()">
-        <noscript><h1 class="no-script">Please allow scripts because it will make everything function better on our site</h1></noscript>
-        <div w3-include-html="https://hdprojects.dev/nav.html"></div>
-        <script>
-            w3.includeHTML();
-        </script>
-        <div class="parallax">
-            <div class="caption">
-                <span class="border"><button class="w3-button w3-xlarge" onclick="openNav()" title="Open Navigation">&#9776;</button>About Us | HD <span class="w3-hide-small w3-hide-medium">Open Source Projects</span></span>
-            </div>
-        </div>
-
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Who Are We</h3>
-  <p>   <p>We are two students from Westview Middle School in the <a href="https://www.vexrobotics.com/vexedr/competition" target="_blank">VEX Robotics program</a> and work hard all of the school year to progam and build our robots for the season.</p>
-
-<p> Coding is our passion and since our robotics season ended early due to COVID-19, we have had a lot more spare time to work on projects.</p>
-    
-    <p> Checkout the <a href="https://github.com/HD-Projects"> github orginization </a> to see what our latest projects are </p>
-
-<p>Our favorite languages are Java, Python, C++ and C#</p>
-
-</div>
-<div class="w3-container">
- <h1> <a href="https://hdprojects.dev/contact/">Contact Us</a> </h1>
-
-<h3 class="contactInfo" style="color:black;"> Contact Info </h3>
-
-<h3 class="contactInfo" style="color:black;"> <i class="fa fa-envelope"></i> developers@hdprojects.dev </h3>
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-<div w3-include-html="https://hdprojects.dev/footer.html"></div>
-        <script>
-            w3.includeHTML();
-        </script>
-    </body>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159158579-3"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() { dataLayer.push(arguments); }
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-159158579-3');
+      </script>
+      <script src="https://www.w3schools.com/lib/w3.js"></script>
+      <meta charset="utf-8" />
+      <meta http-equiv="content-language" content="en">
+      <meta name="description" content="About us at HD Open Source Projects, we are students from Westview Middle School and would like to share our open source projects with you.">
+      <meta name="keywords" content="hd projects, open source, github, hd, open source, free, HD, projects, ">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600&display=swap" rel="stylesheet">
+      <link href="https://hdprojects.dev/style.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>About Us | HD Open Source Projects</title>
+      <link rel="shortcut icon" href="https://hdprojects.dev/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script src="https://hdprojects.dev/dark.js" type="text/javascript"></script>
+      <script src="https://hdprojects.dev/w3.js" type="text/javascript"></script>
+   </head>
+   <body onload="getDarkMode()">
+      <noscript>
+         <h1 class="no-script">Please allow scripts because it will make everything function better on our site</h1>
+      </noscript>
+      <div w3-include-html="https://hdprojects.dev/nav.html"></div>
+      <script>
+         w3.includeHTML();
+      </script>
+      <div class="parallax">
+         <div class="caption">
+            <span class="border"><button class="w3-button w3-xlarge" onclick="openNav()" title="Open Navigation">&#9776;</button>About Us | HD <span class="w3-hide-small w3-hide-medium">Open Source Projects</span></span>
+         </div>
+      </div>
+      <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+         <h3 style="text-align:center;">Who Are We</h3>
+         <p>   
+         <p>We are two students from Westview Middle School in the <a href="https://www.vexrobotics.com/vexedr/competition" target="_blank">VEX Robotics program</a> and work hard all of the school year to progam and build our robots for the season.</p>
+         <p> Coding is our passion and since our robotics season ended early due to COVID-19, we have had a lot more spare time to work on projects.</p>
+         <p> Checkout the <a href="https://github.com/HD-Projects"> github orginization </a> to see what our latest projects are </p>
+         <p>Our favorite languages are Java, Python, C++ and C#</p>
+      </div>
+      <div class="w3-container">
+         <h1> <a href="https://hdprojects.dev/contact/">Contact Us</a> </h1>
+         <h3 class="contactInfo" style="color:black;"> Contact Info </h3>
+         <h3 class="contactInfo" style="color:black;"> <i class="fa fa-envelope"></i> developers@hdprojects.dev </h3>
+      </div>
+      <script>
+         var slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}
+             if (n < 1) {slideIndex = slides.length}
+             for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+             }
+             for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+             }
+           slides[slideIndex-1].style.display = "block";
+           dots[slideIndex-1].className += " active";
+         }
+      </script>
+      <div w3-include-html="https://hdprojects.dev/footer.html"></div>
+      <script>
+         w3.includeHTML();
+      </script>
+   </body>
 </html>
-
