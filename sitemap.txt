@@ -18,3 +18,4 @@ https://hdprojects.dev/machinelearning/
 https://hdprojects.dev/ksp/
 https://hdprojects.dev/ksp/diy/
 https://hdprojects.dev/ksp/kontroller/
+https://hdprojects.dev/terms/
